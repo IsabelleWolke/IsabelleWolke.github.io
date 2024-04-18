@@ -29,6 +29,9 @@
 	<div class="box">?</div>
 
 	<script>
+		(function () {
+			"use strict";
+		}
 			/* global jQuery */
 
 			//////////////////////////////////////////////////////////////////
@@ -60,7 +63,16 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 0;
+
+			positionX = 0 + 10; 
+			moveBoxTo(positionX);
+
+			positionX = 10 + 10;
+			moveBoxTo(positionX);
+
+
+
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
